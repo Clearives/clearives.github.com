@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "f3cea284d506955a16ee99605a9d269e"
+    "revision": "1e15c511f406957bc900d1ab0052e055"
   },
   {
     "url": "about/index.html",
-    "revision": "a07741c3c3cbdeec1a52a24e2b56fd15"
+    "revision": "40057753917678649314cfa9c117610a"
   },
   {
     "url": "assets/css/0.styles.ea47b85f.css",
@@ -134,20 +134,20 @@ self.__precacheManifest = [
     "revision": "ed07e0e6cd3319c3aa4179867c6a2f0d"
   },
   {
-    "url": "assets/js/app.519165dc.js",
-    "revision": "1d019c93d33d881783ad5171a4304107"
+    "url": "assets/js/app.f2b0d18b.js",
+    "revision": "c3fae4cbd730da4d04577be40549385e"
   },
   {
     "url": "daily/record/index.html",
-    "revision": "ff313e3355500b16a38699404a42240e"
+    "revision": "252d1457a2035b5dd0684e01fb3d9c9f"
   },
   {
     "url": "frontend/index.html",
-    "revision": "c6025e084748edc3329833fa65050d5b"
+    "revision": "ada9cf37c482656c96d25383678c0f74"
   },
   {
     "url": "index.html",
-    "revision": "b696f249d6cb1e057d6cce48064d8b8c"
+    "revision": "f0131edcc9d5d96a4953eec92085130d"
   },
   {
     "url": "logo.jpg",
@@ -155,59 +155,59 @@ self.__precacheManifest = [
   },
   {
     "url": "node/index.html",
-    "revision": "2c6300dfc20d1e64d2f530aeff6827ef"
+    "revision": "bda755e9dc51959420be9275ef0886d8"
   },
   {
     "url": "node/notes/a/a.html",
-    "revision": "5d9cc1b596fadf9cc7bad388c7435d6b"
+    "revision": "793514cdb8d75be521335cf28d7b32c2"
   },
   {
     "url": "page/2017-06-06-qiniu-upload/index.html",
-    "revision": "430ed56cec29faad9e69ab08652cc10e"
+    "revision": "bf6e538805aaa82ec79d3f9706f28747"
   },
   {
     "url": "page/2017-06-23-livereload/index.html",
-    "revision": "dc9d30b41752ab8e115e3de31d115ee7"
+    "revision": "f305397e8870ef1cd1c3f93dc1e229a2"
   },
   {
     "url": "page/array-and-object/index.html",
-    "revision": "d05686b4571a9bed35fa1737b5b9cddf"
+    "revision": "4b0fea11cb4e3b9ea17b0eb62f6cecaf"
   },
   {
     "url": "page/array-clone/index.html",
-    "revision": "88130f149f67a09c32fc453a27776889"
+    "revision": "521b6dd5021ba65b90f422ef6cb1d74e"
   },
   {
     "url": "page/Asynchronous-and-event-loops/index.html",
-    "revision": "3b5627ddb2b6c8e6d9aaf30e23bb9805"
+    "revision": "b679b202d2e0cab9d44a86cea18b8524"
   },
   {
     "url": "page/autocolor/index.html",
-    "revision": "a9d507487fc981cdec42cb56ef41d1b2"
+    "revision": "ad25eba313c3362d36867d257b0107b4"
   },
   {
     "url": "page/BASE64-encryption-decryption/index.html",
-    "revision": "6a960f7ab2ff57ae47f39c732b818af4"
+    "revision": "2fb17aac6c2fa3c34e8a389f39724f7e"
   },
   {
     "url": "page/github-pages/index.html",
-    "revision": "67a23a8c0f91c96633cb35621d9730db"
+    "revision": "d31d290a7df6d2280a18baf3647dc0b1"
   },
   {
     "url": "page/js-traversing/index.html",
-    "revision": "855c2a022f9c4ea06505206b2ef6fdd0"
+    "revision": "4199a2ec4c82b82b86a1f97b86475bbc"
   },
   {
     "url": "page/module.exports-and-exports/index.html",
-    "revision": "f4bb509f016cabeaff620e3794945f3c"
+    "revision": "5e3e2c9799f6d09f05d70dc3a96e55e1"
   },
   {
     "url": "page/Multiple-asynchronous-collaboration/index.html",
-    "revision": "92c4a9388f0500df5d7ddcb403944eb2"
+    "revision": "a7ce33bb410487cf0b2ec4e79d897099"
   },
   {
     "url": "timeline/index.html",
-    "revision": "9a1819961a519165619daa7b3a64fcc7"
+    "revision": "c1bc6fce9b002fd25edfd1fe20f9551b"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
