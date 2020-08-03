@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微信小程序保存base64图片到本地 | Clearives</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="前端博客clearives.cc是基于vuepress搭建的前端技术分享博客，有js、node、react、vue等前端技术分享">
+    <meta name="keywords" content="前端开发，前端技术，html，js，JavaScript，node，react，vue，前端博客，clearives，vuepress">
+    <link rel="preload" href="/assets/css/0.styles.ea47b85f.css" as="style"><link rel="preload" href="/assets/js/app.b03376a7.js" as="script"><link rel="preload" href="/assets/js/2.b90ad0ea.js" as="script"><link rel="preload" href="/assets/js/16.9902d2d9.js" as="script"><link rel="preload" href="/assets/js/3.de08da3f.js" as="script"><link rel="prefetch" href="/assets/js/10.a22d8dee.js"><link rel="prefetch" href="/assets/js/11.63bfcf77.js"><link rel="prefetch" href="/assets/js/12.0e23309a.js"><link rel="prefetch" href="/assets/js/13.756aa44d.js"><link rel="prefetch" href="/assets/js/14.62f7caac.js"><link rel="prefetch" href="/assets/js/15.d85de976.js"><link rel="prefetch" href="/assets/js/17.7a028f61.js"><link rel="prefetch" href="/assets/js/18.89dfe649.js"><link rel="prefetch" href="/assets/js/19.ee10f52c.js"><link rel="prefetch" href="/assets/js/20.9247c7a8.js"><link rel="prefetch" href="/assets/js/21.852553eb.js"><link rel="prefetch" href="/assets/js/22.1debe013.js"><link rel="prefetch" href="/assets/js/23.8090c8f0.js"><link rel="prefetch" href="/assets/js/24.e23b7a2e.js"><link rel="prefetch" href="/assets/js/25.125f781b.js"><link rel="prefetch" href="/assets/js/26.f81d2707.js"><link rel="prefetch" href="/assets/js/27.83704bff.js"><link rel="prefetch" href="/assets/js/4.faf69ca0.js"><link rel="prefetch" href="/assets/js/5.0b9e59f3.js"><link rel="prefetch" href="/assets/js/6.6ef83a72.js"><link rel="prefetch" href="/assets/js/7.fd0ae54b.js"><link rel="prefetch" href="/assets/js/8.953c36c9.js"><link rel="prefetch" href="/assets/js/9.b4a289c7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ea47b85f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Clearives</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/frontend/" class="nav-link">
+  前端知识
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Nodejs
+</a></div><div class="nav-item"><a href="/package/" class="nav-link">
+  前端框架
+</a></div><div class="nav-item"><a href="/daily/record/" class="nav-link">
+  日记本
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/frontend/" class="nav-link">
+  前端知识
+</a></div><div class="nav-item"><a href="/node/" class="nav-link">
+  Nodejs
+</a></div><div class="nav-item"><a href="/package/" class="nav-link">
+  前端框架
+</a></div><div class="nav-item"><a href="/daily/record/" class="nav-link">
+  日记本
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/frontend/" class="sidebar-link">前端</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Css</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Javascript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/page/2017-06-06-qiniu-upload/" class="sidebar-link">vue使用七牛上传</a></li><li><a href="/page/2017-06-23-livereload/" class="sidebar-link">Live​Reload实时刷新网页</a></li><li><a href="/page/array-and-object/" class="sidebar-link">如何区分是对象还是数组</a></li><li><a href="/page/array-clone/" class="sidebar-link">数组的复制</a></li><li><a href="/page/browser-window-open-intercept/" class="sidebar-link">浏览器拦截弹出的新窗口问题</a></li><li><a href="/page/js-traversing/" class="sidebar-link">JS遍历</a></li><li><a href="/page/weapp-save-base64/" aria-current="page" class="active sidebar-link">微信小程序保存base64图片到本地</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/page/weapp-save-base64/#问题" class="sidebar-link">问题</a></li><li class="sidebar-sub-header"><a href="/page/weapp-save-base64/#taro-getfilesystemmanager" class="sidebar-link">Taro.getFileSystemManager()</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 保存图片到相册</span>
+<span class="token keyword">const</span> imageTempPath <span class="token operator">=</span> <span class="token string">'xxxxx'</span>
+Taro<span class="token punctuation">.</span><span class="token function">saveImageToPhotosAlbum</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    filePath<span class="token operator">:</span> imageTempPath
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><strong>注意</strong> saveImageToPhotosAlbum需要用户授权 scope.writePhotosAlbum。</p> <p>我们知道，当一个有url的图片，我们直接使用上面代码就可以轻松的保存到本地，可是有时候我们的图片会是base64位的数据图片，上面的代码就无效了，那么我们如何解决呢。</p> <h2 id="taro-getfilesystemmanager"><a href="#taro-getfilesystemmanager" class="header-anchor">#</a> Taro.getFileSystemManager()</h2> <p>这个api官网介绍是说，获取全局唯一的文件管理器。</p> <p>然后我们就可以这样：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">saveImage</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> fileSystemManager <span class="token operator">=</span> Taro<span class="token punctuation">.</span><span class="token function">getFileSystemManager</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> number <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    fileSystemManager<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        filePath<span class="token operator">:</span> Taro<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">USER_DATA_PATH</span> <span class="token operator">+</span> <span class="token string">&quot;/pic&quot;</span> <span class="token operator">+</span> number <span class="token operator">+</span> <span class="token string">&quot;.png&quot;</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> img<span class="token punctuation">,</span>
+        encoding<span class="token operator">:</span> <span class="token string">&quot;base64&quot;</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        Taro<span class="token punctuation">.</span><span class="token function">saveImageToPhotosAlbum</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            filePath<span class="token operator">:</span> Taro<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">USER_DATA_PATH</span> <span class="token operator">+</span> <span class="token string">&quot;/pic&quot;</span> <span class="token operator">+</span> number <span class="token operator">+</span> <span class="token string">&quot;.png&quot;</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            Taro<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                title<span class="token operator">:</span> <span class="token string">&quot;保存图片成功&quot;</span><span class="token punctuation">,</span>
+                icon<span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+                duration<span class="token operator">:</span> <span class="token number">2000</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>errMsg<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">&quot;saveImageToPhotosAlbum:fail&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Taro<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                title<span class="token operator">:</span> <span class="token string">&quot;请在设置中打开相册权限&quot;</span><span class="token punctuation">,</span>
+                icon<span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+                duration<span class="token operator">:</span> <span class="token number">2000</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">fail</span><span class="token operator">:</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>打开调试工具，发现这样写就可以顺利的保存base64图片了。</p> <p>其实个人认为还是用canvas去画最好了，也不用去找这些冷门的api，毕竟这base64的图片是后台返的，我们也不好说，只能这样来了，如果要画海报，还是直接前端来，没那么多事。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">8/3/2020, 11:55:40 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/page/js-traversing/" class="prev">
+        JS遍历
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----><div></div><!----></div></div>
+    <script src="/assets/js/app.b03376a7.js" defer></script><script src="/assets/js/2.b90ad0ea.js" defer></script><script src="/assets/js/16.9902d2d9.js" defer></script><script src="/assets/js/3.de08da3f.js" defer></script>
+  </body>
+</html>
